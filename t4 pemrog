@@ -1,37 +1,36 @@
-#include <iostream>   // Library standar C++ untuk input/output
-using namespace std;  // Supaya tidak perlu menulis std:: setiap kali pakai cout/cin
+#include <iostream> // pustaka standar untuk input & output
+using namespace std;
 
 int main () {
-    // Deklarasi variabel untuk menyimpan jumlah belanja 3 pelanggan
-    double belanja1, belanja2, belanja3;
-    
-    // Menampilkan judul program
-    cout << "=== PROGRAM WARUNG - BANDINGKAN BELANJA TIGA PELANGGAN ===" << endl;  
-    
-    // Input jumlah belanja pelanggan 1
-    cout << "Masukan jumlah belanja pelanggan 1: Rp ";
-    cin >> belanja1;
-    
-    // Input jumlah belanja pelanggan 2
-    cout << "Masukan jumlah belanja pelanggan 2: Rp ";
-    cin >> belanja2;
-    
-    // Input jumlah belanja pelanggan 3
-    cout << "Masukan jumlah belanja pelanggan 3: Rp ";
-    cin >> belanja3;   // diperbaiki: sebelumnya salah pakai '<<' dan kurang tanda ';'
-    
-    // Menampilkan hasil perbandingan
-    cout << "\n--- HASIL PERBANDINGAN ---" << endl;
-    
-    // Logika perbandingan hanya antara pelanggan 1 dan pelanggan 2
-    if (belanja1 > belanja2) {
-        cout << "Pelanggan 1 belanja lebih banyak daripada Pelanggan 2." << endl;
-    } else if (belanja2 > belanja1) {
-        cout << "Pelanggan 2 belanja lebih banyak daripada Pelanggan 1." << endl;
-    } else {
-        cout << "Pelanggan 1 dan 2 belanja dengan jumlah yang sama."  << endl;
-    }
-    
-    // Program selesai
-    return 0;
+        // deklarasi variabel untuk menyimpan jumlah belanja 2 pelanggan
+        double belanja1, belanja2;
+        
+        // judul program
+        cout << "=== PROGRAM WARUNG - BANDINGKAN BELANJA DUA PELANGAN ===" << endl;
+        
+        // input belanja pelanggan pertama
+        cout << "Masukan jumlah belanja pelanggan 1: Rp ";
+        cin >> belanja1;
+        
+        // input belanja pelanggan kedua
+        cout << "Masukan jumlah belanja pelanggan 2: Rp ";
+        cin >> belanja2;
+        
+        // menampilkan hasil perbandingan
+        cout << "\n--- HASIL PERBANDINGAN ---" << endl;
+
+        // kondisi jika pelanggan 1 belanja lebih banyak
+        if (belanja1 > belanja2) {
+                cout << "Pelanggan 1 belanja lebih banyak daripada Pelanggan 2." << endl;
+        } 
+        // kondisi jika pelanggan 2 belanja lebih banyak
+        else if (belanja2 > belanja1) {
+                cout << "Pelanggan 2 belanja lebih banyak daripada Pelanggan 1." << endl;
+        } 
+        // kondisi jika jumlah belanja sama
+        else {
+                cout << "Kedua pelanggan belanja dengan jumlah yang sama."  << endl;
+        }
+        
+        return 0; // program selesai
 }
