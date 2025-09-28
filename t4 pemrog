@@ -3,7 +3,7 @@ using namespace std;  // Supaya tidak perlu menulis std:: setiap kali pakai cout
 
 int main () {
     // Deklarasi variabel untuk menyimpan jumlah belanja 3 pelanggan
-    double belanja1, belanja2, belanja3;
+    double belanja1, belanja2;
     
     // Menampilkan judul program
     cout << "=== PROGRAM WARUNG - BANDINGKAN BELANJA TIGA PELANGGAN ===" << endl;  
